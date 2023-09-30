@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include "huffman.hpp"
+#include "huffman/huffman.hpp"
 
 
 std::string Huffman::encode(std::string text) {
@@ -41,12 +41,3 @@ FrequencyMap Huffman::computeFrequencies(std::string text) {
 
 
 
-
-int main() {
-
-  Huffman huffman;
-  std::string text("This is just a test");
-  huffman.encode(text);
-
-  return 0;
-}
