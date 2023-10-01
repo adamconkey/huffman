@@ -5,6 +5,7 @@
 
 
 using FrequencyMap = std::unordered_map<char, int>;
+using TreeNodePtr = std::shared_ptr<TreeNode>;
 
 
 class Huffman {
@@ -17,6 +18,6 @@ public:
     
     FrequencyMap computeFrequencies(std::string text);
 
-    TreeNode* createEncodingTree(FrequencyMap freqs);
+    TreeNodePtr createEncodingTree(FrequencyMap freqs);
     
 };
