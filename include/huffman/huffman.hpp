@@ -10,13 +10,11 @@ using FrequencyMap = std::unordered_map<char, int>;
 class Huffman {
 
 public:
-
   
-  
-  Huffman() {}
-
-  std::string encode(std::string text);
-
-  FrequencyMap computeFrequencies(std::string text);
-  
+    Huffman() {}
+    
+    std::string encode(std::string text);
+    
+    FrequencyMap computeFrequencies(std::string text);
+    
 };
