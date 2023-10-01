@@ -1,4 +1,3 @@
-#include <iostream>
 
 #include "huffman/huffman.hpp"
 
@@ -8,14 +7,11 @@ std::string Huffman::encode(std::string text) {
     
     // Compute character frequencies in string
     FrequencyMap freqs = computeFrequencies(text);
-    
-    for (const auto &p : freqs) {
-	std::cout << p.first << '\t' << p.second << '\n';
-    }
 
+    // Create binary tree according to character frequencies
+    TreeNode* encoding_tree = createEncodingTree(freqs);
     
     
-    // TODO create tree according to frequencies
     
     // TODO set codes in map for each char based on tree traversal
     
@@ -30,4 +26,19 @@ FrequencyMap Huffman::computeFrequencies(std::string text) {
     for (char c : text)
 	freqs[c]++;
     return freqs;
+}
+
+
+TreeNode* Huffman::createEncodingTree(FrequencyMap freqs) {
+    TreeNode* root;
+
+    // TODO create leaf nodes for each char/freq
+
+    // TODO add all leaf nodes to priority queue keyed on the node's freq
+
+    // TODO build tree pulling elements from PQ and adding new node with those as children
+
+    // TODO continue until PQ is empty, return root storing encoding tree
+    
+    return root;
 }

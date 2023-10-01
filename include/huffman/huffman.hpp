@@ -1,4 +1,4 @@
-#include <bitset>
+#include <string>
 #include <unordered_map>
 
 #include "tree.hpp"
@@ -16,5 +16,7 @@ public:
     std::string encode(std::string text);
     
     FrequencyMap computeFrequencies(std::string text);
+
+    TreeNode* createEncodingTree(FrequencyMap freqs);
     
 };
