@@ -17,11 +17,6 @@ public:
 
   std::string encode(std::string text);
 
-    
-  
-
-private:
-
   FrequencyMap computeFrequencies(std::string text);
   
 };

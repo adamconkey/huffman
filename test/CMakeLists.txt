@@ -9,4 +9,4 @@ add_executable(test_huffman test_huffman.cpp)
 
 target_link_libraries(test_huffman PRIVATE huffman Catch2::Catch2)
 
-add_test(NAME huffman_test COMMAND test_huffman) # Command can be a target
+add_test(NAME huffman_test COMMAND test_huffman)
